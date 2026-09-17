@@ -6,6 +6,7 @@ export const miLista = {
       id: "ep1",
       title: "The Phantom Menace",
       tipo: "pelicula",
+      runtime: "",
       poster:
         "https://www.themoviedb.org/t/p/w1280/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg",
       order: "14",
@@ -14,6 +15,7 @@ export const miLista = {
       id: "ep2",
       title: "Attack of the Clones",
       tipo: "pelicula",
+      runtime: "",
       poster:
         "https://www.themoviedb.org/t/p/w1280/oZNPzxqM2s5DyVWab09NTQScDQt.jpg",
       order: "16",
@@ -22,6 +24,7 @@ export const miLista = {
       id: "ep3",
       title: "Revenge of the Sith",
       tipo: "pelicula",
+      runtime: "",
       poster:
         "https://www.themoviedb.org/t/p/w1280/xfSAoBEm9MNBjmlNcDYLvLSMlnq.jpg",
       order: "150",
@@ -30,6 +33,7 @@ export const miLista = {
       id: "ep4",
       title: "A New Hope",
       tipo: "pelicula",
+      runtime: "",
       poster:
         "https://www.themoviedb.org/t/p/w1280/fai0rspsNeJCS69wHNjOdWxcI7P.jpg",
       order: "317",
@@ -38,6 +42,7 @@ export const miLista = {
       id: "ep5",
       title: "The Empire Strikes Back",
       tipo: "pelicula",
+      runtime: "",
       poster:
         "https://www.themoviedb.org/t/p/w1280/nNAeTmF4CtdSgMDplXTDPOpYzsX.jpg",
       order: "318",
@@ -46,6 +51,7 @@ export const miLista = {
       id: "ep6",
       title: "Return of the Jedi",
       tipo: "pelicula",
+      runtime: "",
       poster:
         "https://www.themoviedb.org/t/p/w1280/jQYlydvHm3kUix1f8prMucrplhm.jpg",
       order: "319",
@@ -54,6 +60,7 @@ export const miLista = {
       id: "ep7",
       title: "The Force Awakens",
       tipo: "pelicula",
+      runtime: "",
       poster:
         "https://www.themoviedb.org/t/p/w1280/wqnLdwVXoBjKibFRR5U3y0aDUhs.jpg",
       order: "394",
@@ -62,6 +69,7 @@ export const miLista = {
       id: "ep8",
       title: "The Last Jedi",
       tipo: "pelicula",
+      runtime: "",
       poster:
         "https://www.themoviedb.org/t/p/w1280/ySaaKHOLAQU5HoZqWmzDIj1VvZ1.jpg",
       order: "395",
@@ -70,6 +78,7 @@ export const miLista = {
       id: "ep9",
       title: "The Rise of Skywalker",
       tipo: "pelicula",
+      runtime: "",
       poster:
         "https://www.themoviedb.org/t/p/w1280/db32LaOibwEliAmSL2jjDF6oDdj.jpg",
       order: "415",
@@ -78,6 +87,7 @@ export const miLista = {
       id: "rogue-one",
       title: "Rogue One",
       tipo: "pelicula",
+      runtime: "",
       poster:
         "https://www.themoviedb.org/t/p/w1280/i0yw1mFbB7sNGHCs7EXZPzFkdA1.jpg",
       order: "316",
@@ -86,6 +96,7 @@ export const miLista = {
       id: "solo",
       title: "Solo",
       tipo: "pelicula",
+      runtime: "",
       poster:
         "https://www.themoviedb.org/t/p/w1280/4oD6VEccFkorEBTEDXtpLAaz0Rl.jpg",
       order: "214",
@@ -94,6 +105,7 @@ export const miLista = {
       id: "cw-movie",
       title: "Clone Wars",
       tipo: "pelicula",
+      runtime: "",
       poster:
         "https://www.themoviedb.org/t/p/w1280/iJQfixW818LUdSXlCDL3JZm0S0g.jpg",
       order: "17",
@@ -102,6 +114,7 @@ export const miLista = {
       id: "mando-grogu",
       title: "The Mandalorian and Grogu",
       tipo: "pelicula",
+      runtime: "",
       poster:
         "https://www.themoviedb.org/t/p/w1280/iJQfixW818LUdSXlCDL3JZm0S0g.jpg",
       order: "337.5",
@@ -3410,3 +3423,10 @@ export const miLista = {
     },
   ],
 };
+      miLista.series.forEach((serie) => {
+      serie.temporadas?.forEach((temporada) => {
+      temporada.episodios?.forEach((episodio) => {
+      episodio.runtime = "";
+    });
+  });
+});
